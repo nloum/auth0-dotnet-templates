@@ -1,0 +1,75 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Auth0",
+    "classifications": [
+        "Web", 
+        "Auth0"
+    ],
+    "name": "Auth0 MVC Application",
+    "identity": "Auth0.Templates.Mvc",
+    "groupIdentity": "Auth0.Templates",
+    "description": "A project template for creating an ASP.NET Core MVC application which allows users to log in using Auth0",
+    "shortName": "auth0mvc",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+      },
+    "sourceName": "Auth0.Mvc",
+    "preferNameDirectory": true,
+    "primaryOutputs": [ { "path": "Auth0.Mvc.csproj" } ],
+    "symbols": {
+        "SignatureAlgorithm": {
+            "type": "parameter",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "RS256",
+                    "description": "Tokens are signed using RS256"
+                },
+                {
+                    "choice": "HS256",
+                    "description": "Tokens are signed using HS256"
+                }
+            ],
+            "description": "The algorithm with which tokens returned from Auth0 are being signed",
+            "defaultValue": "RS256"
+        },
+        "SaveTokens": {
+            "type": "parameter",
+            "datatype": "bool",
+            "description": "If specified, saves the tokens returned from Auth0",
+            "defaultValue": "false"
+        },
+        "IncludeProfilePage": {
+            "type": "parameter",
+            "datatype": "bool",
+            "description": "If specified, adds a page which allows you to view the user's profile",
+            "defaultValue": "true"
+        },
+        "IncludeClaimsPage": {
+            "type": "parameter",
+            "datatype": "bool",
+            "description": "If specified, adds a page which allows you to view the user's claims",
+            "defaultValue": "false"
+        }
+    },
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "condition": "(!IncludeProfilePage)",
+                    "exclude": [
+                        "Models/UserProfileViewModel.cs",
+                        "Views/Account/Profile.cshtml"
+                    ]
+                },
+                {
+                    "condition": "(!IncludeClaimsPage)",
+                    "exclude": [
+                        "Views/Account/Claims.cshtml"
+                    ]
+                }
+            ]
+        }
+    ]
+}
