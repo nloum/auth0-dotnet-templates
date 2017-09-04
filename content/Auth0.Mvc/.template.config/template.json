@@ -7,7 +7,7 @@
     ],
     "name": "Auth0 MVC Application",
     "identity": "Auth0.Templates.Mvc",
-    "groupIdentity": "Auth0.Templates",
+    "groupIdentity": "Auth0.Templates.Mvc",
     "description": "A project template for creating an ASP.NET Core MVC application which allows users to log in using Auth0",
     "shortName": "auth0mvc",
     "tags": {
