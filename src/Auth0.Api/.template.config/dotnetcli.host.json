@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/dotnetcli.host",
+    "symbolInfo": {
+      "SignatureAlgorithm": {
+        "longName": "signature-algorithm",
+        "shortName": "sa"
+      },
+      "SaveTokens": {
+        "longName": "save-tokens",
+        "shortName": "st"
+      }
+    }
+}
