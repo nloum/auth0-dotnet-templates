@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Auth0.Templates</id>
+    <version>1.0.0</version>
+    <description>
+      Auth0 templates for .NET Core
+    </description>
+    <authors>Auth0</authors>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+</package>
