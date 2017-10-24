@@ -12,7 +12,7 @@ The Auth0 Templates for .NET Core allows you to quickly bootstrap a .NET Core We
 You can install the templates by running the following command
 
 ```bash
-dotnet -i Auth0.Templates
+dotnet new -i Auth0.Templates
 ```
 
 Once installed your will have to new templates available to create either and MVC or Web Api application.
