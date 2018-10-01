@@ -15,19 +15,19 @@ You can install the templates by running the following command
 dotnet new -i Auth0.Templates
 ```
 
-Once installed your will have to new templates available to create either and MVC or Web Api application.
+Once installed you will have new templates available to create either an MVC or Web API application.
 
 ## Using the templates
 
 ### Auth0 MVC Application
 
-To create a new MVC application, you can run the following command
+To create a new MVC application, you can run the following command:
 
 ```
 dotnet new auth0mvc [options]
 ```
 
-This will create a new MVC application in the current folder. The following template-speficic options are available:
+This will create a new MVC application in the current folder. The following template-specific options are available:
 
 
 Option | Description | 
@@ -39,7 +39,7 @@ Option | Description |
 
 ### Auth0 Web API Application
 
-To create a new Web API application, you can run the following command
+To create a new Web API application, you can run the following command:
 
 ```
 dotnet new auth0api [options]
