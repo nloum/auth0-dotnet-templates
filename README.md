@@ -1,4 +1,4 @@
-# socketio-jwt
+# auth0-dotnet-templates
 <img src="https://img.shields.io/badge/community-driven-brightgreen.svg"/> <br>
 
 The Auth0 Templates for .NET Core allows you to quickly bootstrap a .NET Core Web application that works with Auth0.
